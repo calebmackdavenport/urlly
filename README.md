@@ -2,9 +2,10 @@
 
 ### Get it rolling
 
-`npm start` the server in `./server`. Just a basic express server.
-`react-native start` in root directory
-Point `baseURL` in `config.js` to point the app at a different url if you don't use `http://localhost:3000` by default
+`npm start` the server in `./server`. Just a basic express server.  
+`react-native start` in root directory.  
+Point `baseURL` in `config.js` to point the app at a different url if you don't use `http://localhost:3000` by default.  
+API key for the airtable db is already in the server, but @me if there's any problems.
 
 ##### Caveats
 - I'm sure I'm stating the obvious to you all, but you would not be able to use this on a device pointed at localhost:3000 by default
