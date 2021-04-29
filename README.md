@@ -2,6 +2,7 @@
 
 ### Get it rolling
 
+`npm install` on the server side, `yarn install` & `pod install` on the native side.  
 `npm start` the server in `./server`. Just a basic express server.  
 `react-native start` in root directory.  
 Point `baseURL` in `config.js` to point the app at a different url if you don't use `http://localhost:3000` by default.  
