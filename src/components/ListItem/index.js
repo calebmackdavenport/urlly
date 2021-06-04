@@ -1,10 +1,16 @@
 import React from 'react';
-import {Text, StyleSheet} from 'react-native';
+import {Text, StyleSheet, TouchableOpacity, Linking, Alert} from 'react-native';
 
-const ListItem = ({url}) => (
-  <Text style={styles.listText}>
-    {url}
-  </Text>
+const handlePress = url => {
+  Linking.canOpenURL(url).then(success => {
+    success ? Linking.openURL(url) : Alert.alert('Could not open url');
+  });
+};
+
+const ListItem = ({link, url}) => (
+  <TouchableOpacity onPress={() => handlePress(url)}>
+    <Text style={styles.listText}>{link}</Text>
+  </TouchableOpacity>
 );
 
 export default ListItem;

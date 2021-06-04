@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import {useForm, Controller} from 'react-hook-form';
 import {Keyboard} from 'react-native';
 
@@ -58,8 +58,8 @@ const Home = () => {
       <Title text={'URL.LY'} />
       <View style={{flex: 1, justifyContent: 'space-evenly'}}>
         <View>
-          {urlList.map(url => (
-            <ListItem key={url} url={url} />
+          {urlList.map(({Link, url}) => (
+            <ListItem link={Link} key={Link} url={url} />
           ))}
         </View>
         <View>
