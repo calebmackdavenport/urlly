@@ -9,7 +9,7 @@ export function getAirtableData(mapFunction) {
     method: 'get',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer keyllUfIbKpAKqs96'
+      'Authorization': 'Bearer keyhere'
     }
   })
   .then(res => res.json())
